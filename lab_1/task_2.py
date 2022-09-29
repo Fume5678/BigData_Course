@@ -61,7 +61,3 @@ class test_area(unittest.TestCase):
         self.assertEqual(res["name"], "triangle")
         self.assertEqual(res["area"], 9)
 
-
-
-
-
