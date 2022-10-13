@@ -45,19 +45,25 @@ def square(figure):
     return res
 
 
-class test_area(unittest.TestCase):
-    def test_circle(self):
-        res = square(Circle(3))
-        self.assertEqual(res["name"], "circle")
-        self.assertAlmostEqual(res["area"], 28.26, places=2)
+# class test_area(unittest.TestCase):
+#     def test_circle(self):
+#         res = square(Circle(3))
+#         self.assertEqual(res["name"], "circle")
+#         self.assertAlmostEqual(res["area"], 28.26, places=2)
+#
+#
+#     def test_rect(self):
+#         res = square(Rect(3, 4))
+#         self.assertEqual(res["name"], "rectangle")
+#         self.assertEqual(res["area"], 12)
+#
+#     def test_triangle(self):
+#         res = square(Triangle(3, 6))
+#         self.assertEqual(res["name"], "triangle")
+#         self.assertEqual(res["area"], 9)
+#
 
-    def test_rect(self):
-        res = square(Rect(3, 4))
-        self.assertEqual(res["name"], "rectangle")
-        self.assertEqual(res["area"], 12)
-
-    def test_triangle(self):
-        res = square(Triangle(3, 6))
-        self.assertEqual(res["name"], "triangle")
-        self.assertEqual(res["area"], 9)
-
+if __name__ == "__main__":
+    res = square(Circle(1))
+    print(res)
+#%%
